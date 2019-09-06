@@ -40,8 +40,16 @@ button.btn.big{
 /* BTN test*/
 
 button.btn.border.green{
+    
     border-color: purple;
     color:purple;
+
+    justify-content: end;
+}
+
+.flex1{
+    display: flex;
+    justify-content: flex-end;
 }
 
 button.btn.border.blue{
@@ -63,4 +71,16 @@ hr{
   height: 5px;
   width: 40%;
   background-color: white;
+}
+
+.flex2{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.flex3{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
