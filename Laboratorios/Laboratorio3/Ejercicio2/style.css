@@ -1,0 +1,66 @@
+.backG{
+height: 100%;
+width: 100%;
+}
+
+.btn{
+    border: 1px solid transparent;
+    border-radius: 0.3em;
+    box-shadow: none;
+    padding: 1em;
+    opacity: 0.8;
+    text-transform: uppercase;
+}
+
+button.btn.small{
+    font-size: 0.7em;
+}
+button.btn.big{
+    font-size: 1.1em;
+}
+
+.btn.green{
+    background: #4CAF50;
+    color: white;
+}
+
+.btn.green{
+    background: purple;
+    color: white;
+}
+.btn.blue{
+    background: blue;
+    color: white;
+}
+.btn.pink{
+    background: pink;
+    color: white;
+}
+
+/* BTN test*/
+
+button.btn.border.green{
+    border-color: purple;
+    color:purple;
+}
+
+button.btn.border.blue{
+    border-color: blue;
+    color:blue;
+}
+
+button.btn.border.pink{
+    border-color: pink;
+    color:pink;
+}
+
+h1{
+    font-family: 'Lora', serif;
+    color:white;
+}
+
+hr{
+  height: 5px;
+  width: 40%;
+  background-color: white;
+}
