@@ -1,0 +1,83 @@
+$color-primary: white;
+$color-background-f: #673AB7;
+$color-background-s: #3F51B5;
+$color-background-t: #D81B60;
+$back-ground: url("https://cdn.wallpapersafari.com/83/31/DBzikL.jpg");
+$overf-bdy:hidden;
+$back-ground-a:fixed;
+$position-center: center;
+$jus-cont: space-between;
+$just-cont-nav: flex-end;
+/* Box*/
+$bck-size: cover;
+$box-sz: border-box;
+
+/* Font*/
+$font-fam-b: 'Quicksand', sans-serif;
+
+/*Propperts:v*/
+$padd-b-one: 1em 5%;
+$height-b:100vh;
+$neutral: 0;
+
+/* FLEX*/
+$disp: flex;
+$f-direction: column;
+$f-flow: row wrap;
+$f-flow-w: wrap;
+/* NAV */
+$n-width: 100%;
+$n-height-auto: auto;
+
+/*MAIN*/
+$m-width: 50%;
+$m-height: auto;
+
+.body {
+    box-sizing: $box-sz;
+    height: $height-b;
+    overflow: $overf-bdy;
+    background-image: $back-ground; 
+    background-attachment: $back-ground-a;
+    background-position: $position-center;
+    background-size: $bck-size;   
+
+    padding: $padd-b-one;
+    margin: $neutral; 
+
+    display: $disp;
+    flex-direction: $f-direction;
+
+    justify-content: $jus-cont;
+    align-items: $position-center;
+
+    font-family: $font-fam-b;
+
+    nav{
+    width: $n-width;
+    height: $n-height-auto;
+
+    display: $disp;
+
+    flex-flow: $f-flow;
+    justify-content: $just-cont-nav; 
+    }
+
+    main{
+        width: $m-width;
+    height: $m-height;
+
+    display: $disp;
+
+    flex-direction: $f-direction;
+    flex-flow: $f-flow-w;
+
+    justify-content: $position-center;
+    align-items: $position-center;
+    }
+
+    
+
+
+
+}
