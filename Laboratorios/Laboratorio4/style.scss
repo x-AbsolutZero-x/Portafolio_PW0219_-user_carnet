@@ -2,6 +2,7 @@ $color-primary: white;
 $color-background-f: #673AB7;
 $color-background-s: #3F51B5;
 $color-background-t: #D81B60;
+$color-grey: grey;
 $back-ground: url("https://cdn.wallpapersafari.com/83/31/DBzikL.jpg");
 $overf-bdy:hidden;
 $back-ground-a:fixed;
@@ -11,6 +12,7 @@ $just-cont-nav: flex-end;
 /* Box*/
 $bck-size: cover;
 $box-sz: border-box;
+$box-sh: 1px 1px 1px black;
 
 /* Font*/
 $font-fam-b: 'Quicksand', sans-serif;
@@ -33,7 +35,7 @@ $n-height-auto: auto;
 $m-width: 50%;
 $m-height: auto;
 
-.body {
+body {
     box-sizing: $box-sz;
     height: $height-b;
     overflow: $overf-bdy;
@@ -63,118 +65,121 @@ $m-height: auto;
     justify-content: $just-cont-nav; 
     }
 
-    main{
-        width: $m-width;
-    height: $m-height;
+}
 
-    display: $disp;
+main{
+    width: $m-width;
+height: $m-height;
 
-    flex-direction: $f-direction;
-    flex-flow: $f-flow-w;
+display: $disp;
 
-    justify-content: $position-center;
-    align-items: $position-center;
+flex-direction: $f-direction;
+flex-flow: $f-flow-w;
+
+justify-content: $position-center;
+align-items: $position-center;
+
+
+
+.btn{
+    color: $color-primary;
+
+    margin: 0.5em;
+    padding: 0.8em;
+
+    background: $color-grey;
+    border-radius: 0.5em;
+    box-shadow: $box-sh; 
+
+.deep{
+    background:$color-background-f;
+}
+
+.indigo{
+    background: $color-background-s; 
+}
+
+.red{
+    background: $color-background-t;
     }
+}
 
-    .btn{
-        color: $color-primary;
-    
-        margin: 0.5em;
-        padding: 0.8em;
-    
-        background: gray;
-        border-radius: 0.5em;
-        box-shadow: 1px 1px 1px black; 
+}  
 
-    .deep{
-        background: #673AB7;
-    }
-    
-    .indigo{
-        background: #3F51B5; 
-    }
-    
-    .red{
-        background: #D81B60;
-    }
-
-    }  
 
 /*falto*/
 
 main>img{
-    width: 50%;
-    height: auto;
+width: 50%;
+height: auto;
 
-    margin: 1em;
+margin: 1em;
 
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 5px; 
+background: rgba(255, 255, 255, 0.5);
+border-radius: 5px; 
 }
 
 main hr{
-    width: 75%;
+width: 75%;
 
-    background: white;
-    height: 7px;
+background: white;
+height: 7px;
 
-    border-radius: 5px; 
-    border: none;
+border-radius: 5px; 
+border: none;
 }
 
 main .logos{
-    width: 100%;
-    height: auto;
+width: 100%;
+height: auto;
 
-    display: flex;
-    flex-flow: row wrap;
+display: flex;
+flex-flow: row wrap;
 
-    justify-content: center;
+justify-content: center;
 }
 
 .logos>img{
-    object-fit: cover; 
-    
-    width: 5em;
-    height: 5em;
+object-fit: cover; 
 
-    margin: 0.5em;
+width: 5em;
+height: 5em;
 
-    background: whitesmoke;
+margin: 0.5em;
 
-    border: 1px solid black;
-    border-radius: 100%;
+background: whitesmoke;
 
-    opacity: 0.7;
+border: 1px solid black;
+border-radius: 100%;
+
+opacity: 0.7;
 }
 
 .logos>img:hover{
-    opacity: 1;
+opacity: 1;
 }
 
 /*
-    Footer
+Footer
 */
 
 footer{
-    width: 100%;
-    height: auto;
+width: 100%;
+height: auto;
 
-    display: flex;
+display: flex;
 
-    justify-content: space-between;
+justify-content: space-between;
 }
 
 footer>span{
-    padding: 0.7em;
+padding: 0.7em;
 
-    color: whitesmoke;
+color: whitesmoke;
 
-    font-size: 0.8em;
-    text-decoration: underline;
+font-size: 0.8em;
+text-decoration: underline;
 
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 0.5em;
-}
-
+background: rgba(0, 0, 0, 0.5);
+border-radius: 0.5em;
 }
